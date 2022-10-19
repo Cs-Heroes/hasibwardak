@@ -1,0 +1,51 @@
+# tuple in python
+from collections import namedtuple
+a=namedtuple('course','name,technology')
+b=a._make(['artifitiol intalligence','java'])
+print(b)
+# Deque
+from collections import deque
+a={'e','r','t','f'}
+d=deque(a)
+d.appendleft('pyton')
+print(d)
+d.pop()
+print(d)
+# CHAINMAP
+from collections import ChainMap
+a={1: 'Education',2: 'python'}
+b={3: 'ML',4: 'AI'}
+a1=ChainMap(a,b)
+print(a1)
+#COUNTER
+from collections import Counter
+a=[1,1,2,3,4,5,6,5,4,3,2,1]
+c=Counter(a)
+print(c)
+print(list(c.elements()))
+print(c.most_common())
+sub={2:1 , 6:1}
+print(c.subtract(sub))
+print(c.most_common())
+
+#Orderdect
+
+from collections import OrderedDict
+
+d=OrderedDict()
+d[1]='a'
+d[2]='s'
+d[3]='d'
+d[4]='f'
+d[5]='a'
+d[6]='g'
+print(d)
+print(d.keys())
+
+# defultdect
+from collections import defaultdict
+d=defaultdict(int)
+d[1]='python'
+d[2]='book'
+
+print(d)
