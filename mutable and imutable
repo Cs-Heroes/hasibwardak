@@ -1,0 +1,28 @@
+num1=33
+print(id(num1))
+num1=38
+print(id(num1))
+num2=[34,22]
+print(id(num2))
+num2[1]=33
+print(id(num2))
+
+#mutalble set and list
+
+has={123,243,54,33}
+print(id(has))
+has.add(33323)
+print(id(has))
+
+lis1=["hasibullah",44,33]
+print(lis1)
+lis1[2]=3333
+print(lis1)
+
+
+# tuple is imutable
+
+tup=("hasib",33,32,74)
+# tup[3]=3 this is an eror in imutable
+print(id(tup))
+
