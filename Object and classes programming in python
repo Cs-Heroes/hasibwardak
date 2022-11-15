@@ -6,29 +6,3 @@ class student:
         print("the name is {} and the age is {}".format(name,age))
 s=student()
 s.show('hasibullah',33)
-class std:
-    def __init__(self,name):
-        self.name=name
-        self.attend=0
-        self.mark=[]
-        print("Welcom {} to the school".format(name))
-    def addmarks(self,ma):
-        self.mark.append(ma)
-    def attenddays(self):
-        self.attend+=1
-    def getavg(self):
-        return sum(self.mark)/len(self.mark)
-s1=std("peter")
-s2=std("hasib")
-s1.attend
-0
-s1.attenddays()
-s1.attend
-1
-s1.mark
-[]
-s1.addmarks(33)
-s1.addmarks(333)
-s1.addmarks(3233)
-s1.mark
-s1.getavg()
